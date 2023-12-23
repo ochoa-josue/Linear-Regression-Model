@@ -74,6 +74,11 @@ This repository contains my own Python implementation of a linear regression mod
    pip install -r requirements.txt
    ```
 
+   or if using macOS/Linux:
+      ```bash
+   pip3 install -r requirements.txt
+   ```
+
 6. **Deactivating the Virtual Environment**
 
    When you're finished working, you can deactivate the virtual environment:
@@ -84,12 +89,57 @@ This repository contains my own Python implementation of a linear regression mod
 
 ## Usage
 
-Provide instructions on how to run and use linear regression model.
+### Importing the Model
 
-## Contributing
+First, ensure that the `LinearRegressionModel.py` file is in your project directory. You can import the model into your Python script as follows:
 
-Guidelines for contributing to this project 
+```python
+from LinearRegressionModel import LinearRegressionModel
+```
 
-## License
+### Preparing Your Data
 
-Information about the project's license
+Your data should be in the form of two lists or NumPy arrays: one for the independent variable (X) and one for the dependent variable (y). Here's an example of preparing a simple dataset:
+
+```python
+import numpy as np
+
+# Example Data
+X = np.array([1, 2, 3, 4, 5])  # Independent variable (e.g., years of experience)
+y = np.array([2, 4, 6, 8, 10]) # Dependent variable (e.g., salary)
+```
+
+### Fitting the Model
+
+Instantiate the `LinearRegressionModel` and fit it to your data:
+
+```python
+model = LinearRegressionModel()
+model.fit(X, y)
+```
+
+### Making Predictions
+
+Once the model is fitted, you can use it to make predictions:
+
+```python
+predicted_values = model.predict(X)
+print(predicted_values)
+```
+
+### Plotting the Results
+
+To visualize the linear regression line along with the data points:
+
+```python
+model.plot(X, y, line_style='--', line_color='red', x_label='Years of Experience', y_label='Salary', axis_title='Linear Regression Fit')
+```
+
+### Evaluating the Model
+
+To evaluate the performance of your model, you can use the `score` method which returns the R² score (coefficient of determination):
+
+```python
+r_squared = model.score(X, y)
+print("R² Score:", r_squared)
+```
