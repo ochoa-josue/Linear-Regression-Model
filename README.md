@@ -143,3 +143,13 @@ To evaluate the performance of your model, you can use the `score` method which 
 r_squared = model.score(X, y)
 print("R² Score:", r_squared)
 ```
+## Resources
+
+- [Kaggle Dataset: Salary Dataset](https://www.kaggle.com/datasets/abhishek14398/salary-dataset-simple-linear-regression/code)
+  - Description: This dataset was used for model training and testing. It contains salary data for simple linear regression.
+  
+- [Math Is Fun: Least Squares Regression](https://www.mathsisfun.com/data/least-squares-regression.html)
+  - Description: This resource provides an explanation of least squares regression, along with a relevant formula to calculate mean-squared-error
+  
+- [Wikipedia: Coefficient of Determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)
+  - Description: Wikipedia page explaining the coefficient of determination R<sup>2</sup>, used in regression analysis, along with a relevant formula used in calculating R<sup>2</sup> score
