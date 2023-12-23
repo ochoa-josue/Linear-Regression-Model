@@ -15,8 +15,10 @@ def main():
     #data processing
     model = LinearRegressionModel()
     model.fit(X, y)
-    print(f'R-squared score: {model.score(X, y)}')
-    print(f'Mean-squared-error: {model.score(X, y, normalized=False)}')
+    r_squared_score = model.score(X, y)
+    mean_squared_error = model.score(X, y, normalized=False)
+    print(f'R-squared score: {r_squared_score}')
+    print(f'Mean-squared-error: {mean_squared_error}')
     model.plot(X, y, x_label = 'Years of Experience', y_label='Salary')
 
 if __name__ == "__main__":
