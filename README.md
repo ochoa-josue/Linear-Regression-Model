@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains my own Python implementation of a linear regression model. This project aims to demonstrate a fundamental understanding of the linear regression algorithm, its mathematical foundations, and practical applications.
+This repository contains my own attempt on an implementation of a linear regression model, similar to that of sklearn's. This project aims to demonstrate a fundamental understanding of the linear regression algorithm, its mathematical foundations, and practical applications.
 
 ## Installation
 
