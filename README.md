@@ -84,12 +84,12 @@ This repository contains my own Python implementation of a linear regression mod
 
 ## Usage
 
-Provide instructions on how to run and use your linear regression model here.
+Provide instructions on how to run and use linear regression model.
 
 ## Contributing
 
-Guidelines for contributing to this project (if applicable).
+Guidelines for contributing to this project 
 
 ## License
 
-Information about the project's license (if applicable).
+Information about the project's license
