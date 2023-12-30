@@ -9,83 +9,15 @@ This repository contains my attempt on implementing a linear regression model si
 ### Prerequisites
 
 - Python 3.x
-- pip
 
-### Setting Up a Virtual Environment and Installing Dependencies
+### Optional: Virtual Environment Setup
 
-1. **Install Virtualenv**
+Using a Python virtual environment is recommended for managing dependencies without affecting your global Python installation. 
 
-   If you don't have `virtualenv` installed, open your terminal (Command Prompt on Windows or Terminal on macOS/Linux) and run:
+For guidance on setting up a Python virtual environment, refer to the following introductory tutorial:
 
-   ```bash
-   pip install virtualenv
-   ```
-
-   If the pip command is not found on macOS/Linux, and you have Python 3 installed, use:
-
-   ```bash
-   pip3 install virtualenv
-   ```
-   
-2. **Clone the Repository**
-
-   First, clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/Linear-Regression-Model.git
-   ```
-
-   Navigate to the project directory:
-
-   ```bash
-   cd Linear-Regression-Model
-   ```
-3. **Create a Virtual Environment**
-
-   In the project directory, create a virtual environment:
-
-   ```bash
-   virtualenv venv
-   ```
-
-   This command creates a new folder `venv` in your project directory, containing the virtual environment.
-4. **Activate the Virtual Environment**
-
-   Before installing dependencies, activate the virtual environment:
-
-   - On Windows:
-
-     ```bash
-     venv\Scripts\activate
-     ```
-
-   - On macOS and Linux:
-
-     ```bash
-     source venv/bin/activate
-     ```
-
-   Your command prompt should change to indicate that the virtual environment is activated.
-5. **Install Project Dependencies**
-
-   With the virtual environment activated, install the project dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   or if using macOS/Linux:
-      ```bash
-   pip3 install -r requirements.txt
-   ```
-
-6. **Deactivating the Virtual Environment**
-
-   When you're finished working, you can deactivate the virtual environment:
-
-   ```bash
-   deactivate
-   ```
+- [Python Virtual Environment Tutorial](https://github.com/ochoa-josue/python-venv-guide)
+  - Description: A step-by-step beginner guide to setting up Python virtual environments using `virtualenv` and `venv`.
 
 ## Usage
 
@@ -137,11 +69,18 @@ model.plot(X, y, line_style='--', line_color='red', x_label='Years of Experience
 
 ### Evaluating the Model
 
-To evaluate the performance of your model, you can use the `score` method which returns the R² score (coefficient of determination):
+To evaluate the performance of your model, you can use the `score` method which returns the R² score (coefficient of determination) by default:
 
 ```python
 r_squared = model.score(X, y)
 print("R² Score:", r_squared)
+```
+
+Alternatively, you can use the normalized argument to calculate the Mean Squared Error (MSE):
+
+```python
+mse = model.score(X, y, normalized=False)
+print("R² Score:", mse)
 ```
 ## Resources
 
