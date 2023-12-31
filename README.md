@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains my attempt on implementing a linear regression model similar to that of sklearn's. This project aims to demonstrate a fundamental understanding of the linear regression algorithm, its mathematical foundations, and practical applications.
+This repository contains my implementation of a simple linear regression model, inspired by the design and approach of SKLearn's linear regression functionality. This project aims to demonstrate a fundamental understanding of the linear regression algorithm, its mathematical foundations, and practical applications.
 
 ## Installation
 
@@ -74,11 +74,8 @@ To evaluate the performance of your model, you can use the `score` method which 
 ```python
 r_squared = model.score(X, y)
 print("R² Score:", r_squared)
-```
 
-Alternatively, you can use the normalized argument to calculate the Mean Squared Error (MSE):
-
-```python
+#For mean-squared-error
 mse = model.score(X, y, normalized=False)
 print("R² Score:", mse)
 ```
