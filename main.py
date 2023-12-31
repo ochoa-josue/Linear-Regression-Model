@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from LinearRegressionModel import LinearRegressionModel
+from LinearRegressionModel import SimpleLinearRegressionModel
 
 #constants:
 DATASET = "datasets/Salary_dataset.csv"
@@ -13,7 +13,7 @@ def main():
     X, y = data['YearsExperience'], data['Salary']
 
     #data processing
-    model = LinearRegressionModel()
+    model = SimpleLinearRegressionModel()
     model.fit(X, y)
     r_squared_score = model.score(X, y)
     mean_squared_error = model.score(X, y, normalized=False)

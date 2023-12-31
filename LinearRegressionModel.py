@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-class LinearRegressionModel:
+class SimpleLinearRegressionModel:
     def __init__(self) -> None:
         self.slope = None
         self.intercept = None
