@@ -23,10 +23,10 @@ For guidance on setting up a Python virtual environment, refer to the following 
 
 ### Importing the Model
 
-First, ensure that the `LinearRegressionModel.py` file is in your project directory. You can import the model into your Python script as follows:
+First, ensure that the `SimpleLinearRegressionModel.py` file is in your project directory. You can import the model into your Python script as follows:
 
 ```python
-from LinearRegressionModel import LinearRegressionModel
+from SimpleLinearRegressionModel import SimpleLinearRegressionModel
 ```
 
 ### Preparing Your Data
@@ -43,10 +43,10 @@ y = np.array([2, 4, 6, 8, 10]) # Dependent variable (e.g., salary)
 
 ### Fitting the Model
 
-Instantiate the `LinearRegressionModel` and fit it to your data:
+Instantiate the `SimpleLinearRegressionModel` and fit it to your data:
 
 ```python
-model = LinearRegressionModel()
+model = SimpleLinearRegressionModel()
 model.fit(X, y)
 ```
 

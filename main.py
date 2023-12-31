@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from LinearRegressionModel import SimpleLinearRegressionModel
+from SimpleLinearRegressionModel import SimpleLinearRegressionModel
 
 #constants:
 DATASET = "datasets/Salary_dataset.csv"
